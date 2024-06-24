@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Enthusiast Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="back.png">
+
+  <header>
+    <h1>Welcome to Car Enthusiast Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#models">Popular Models</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="car_logo.jpg" alt="Car Logo">
+      <h2>Discover the Thrill of Driving</h2>
+      <p>Car Enthusiast Hub is your go-to place for information on the latest car models, reviews, and automotive news.</p>
+    </section>
+
+    <section class="models">
+      <h2 id="models">Popular Car Models</h2>
+      <div class="model">
+          <h3>Sedan</h3>
+          <p>Elevate your journey with our sedan collection. Experience the epitome of comfort and style as you traverse</p>
+          <p>scenic landscapes. Our carefully curated selection ensures a seamless blend of luxury and performance,</p>
+          <p>offering you an unparalleled driving experience. Explore the road with confidence and sophistication in our</p>
+          <p>distinguished sedan lineup.</p>
+          <img src="sedan.jpg" alt="Sedan">
+      </div>
+      <br><br>
+      <div class="model">
+          <h3>SUV</h3>
+          <p>Embark on unparalleled adventures with our SUVs – robust, expansive, and primed for your next exploration</p>
+          <p>Offering power, ample space, and versatility, our SUV collection ensures a thrilling and comfortable ride, </p>
+          <p>empowering you to conquer both urban landscapes and off-road terrains with confidence and style.</p>
+          <img src="suv.jpg" alt="SUV">
+      </div>
+      <br><br>
+      <div class="model">
+          <h3>Sports Car</h3>
+          <img src="sports_car.jpg" alt="Sports Car">
+          <p>Indulge your senses and ignite your passion with our high-performance sports cars. </p>
+          <p>Experience the rush of adrenaline as precision engineering meets unparalleled speed and agility.  </p>
+          <p>Our curated selection promises an exhilarating driving experience, delivering the thrill of the </p>
+          <p>open road in every sleek and dynamic model.</p>
+      </div>
+      <br><br>
+    </section>
+
+    <section class="about">
+      <h2 id="about">About Us</h2>
+      <p>Car Enthusiast Hub is a dedicated source for car enthusiasts, offering the latest insights into car models, cutting-edge technologies, and industry trends. Fueled by a passionate team of experts, </p>
+      <p>we are committed to delivering valuable, up-to-date content, fostering a community where the love for automobiles is celebrated and knowledge is shared.</p>
+    </section>
+
+    <section class="contact">
+        <h2 id="contact">Contact Form</h2>
+        <form action="#" method="post" onsubmit="submitForm(event)">
+          <h4><label for="name">Name:</label></h4>
+          <input type="text" name="name" id="name" required>
+         <h4><label for="email">Email:</label></h4>
+          <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+          <h4><label for="message">Message:</label></h4>
+          <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Car Enthusiast Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
